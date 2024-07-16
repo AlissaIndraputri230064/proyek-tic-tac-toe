@@ -1,0 +1,15 @@
+Rancangan kasar antarmuka
+
+Langkah-langkah jalannya web
+• Tampilan masuk sebagai player 1 atau player 2, di mana:
+	○ Terdapat dua tombol bagi player 1 dan player 2
+	○ Saat kedua tombol sudah ditekan, maka permainan dapat dimulai
+• Tampilan permainan:
+	○ Papan berpetak 3x3
+	○ Status player 1 dan player 2 yang ditampilkan dalam bentuk teks, contoh 
+		Player 1 Now Playing               Player 2 Waiting
+	○ Papan terletak di antara teks status player 1 dan player 2 
+• Tampilan pemenang terdapat tulisan "Player 1/2 Wins" di atas papan
+• Tombol restart muncul di bawah papan saat permainan selesai
+• Terdapat tombol pause di pojok kanan atas 
+	 
