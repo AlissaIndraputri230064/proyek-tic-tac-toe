@@ -55,11 +55,11 @@ Bahasa yang digunakan dalam proyek ini:
 <!-- Rencana Pengerjaan Proyek -->
 ## Rencana Pengerjaan Proyek
 
-| Nama                         | Status          |
-| -----------------------------|-----------------|
-| Masuk player 1 dan player 2  | DONE            |
-| Program jalannya permainan   | DONE            |
-| Antarmuka permainan (papan)  | DONE            |
+| Nama                         | Status              |
+| -----------------------------|---------------------|
+| Masuk player 1 dan player 2  | NOT DONE            |
+| Program jalannya permainan   | NOT DONE            |
+| Antarmuka permainan (papan)  | NOT DONE            |
 
 <!-- Lisensi -->
 ## Lisensi
