@@ -28,7 +28,7 @@
 <!-- Latar Belakang -->
 ## Latar Belakang
 
-Dalam era digital saat ini, teknologi telah memberikan kemajuan yang pesat terhadap dunia permainan atau game. Beberapa permainan yang dapat dimainkan melalui beberapa media, seperti kertas, kartu, dll. sudah bisa dimainkan melalui komputer pribadi, telepon genggam (hp), maupun konsol. Hal ini tentunya permainan-permainan tersebut diprogram ... Oleh karenanya, dunia permainan dapat berinovasi dengan pesat di era teknologi yang terus berkembang dengan pesat.
+
 
 <!-- Tujuan dan Manfaat -->
 ## Tujuan dan Manfaat
@@ -38,14 +38,14 @@ Dalam era digital saat ini, teknologi telah memberikan kemajuan yang pesat terha
 <!-- Penjelasan Program -->
 ## Penjelasan Program
 
-Tic-Tac-Toe adalah permainan papan yang dimainkan oleh dua orang di papan berpetak 3x3, di mana salah satu pemain menulis "X" dan yang lain menulis "O" secara bergantian. Pemenang dari permainan ini adalah membuat deretan X atau O secara vertikal, horizontal, ataupun diagonal, contoh XXX atau OOO.
+
 
 <!-- Bahasa yang digunakan -->
 ## Bahasa yang digunakan
 
 Bahasa yang digunakan dalam proyek ini:
 - Frontend: HTML/CSS, Javascript
-- Backend: Flask Python
+- Backend: Flask, MongoDB
 
 <!-- Gambar Rancangan Antarmuka -->
 ## Gambar Rancangan Antarmuka
@@ -55,11 +55,16 @@ Bahasa yang digunakan dalam proyek ini:
 <!-- Rencana Pengerjaan Proyek -->
 ## Rencana Pengerjaan Proyek
 
-| Nama                         | Status              |
-| -----------------------------|---------------------|
-| Masuk player 1 dan player 2  | NOT DONE            |
-| Program jalannya permainan   | NOT DONE            |
-| Antarmuka permainan (papan)  | NOT DONE            |
+| Nama                         | Tipe        | Status              |
+| -----------------------------|-------------|---------------------|
+| Logika tic-tac-toe           | Logic       | NOT DONE            |
+| Masuk player 1 dan player 2  | Server      | NOT DONE            |
+| Room untuk bermain           | Server      | NOT DONE            |
+| Papan berpetak 3x3           | Interface   | NOT DONE            |
+| Status role                  | Interface   | NOT DONE            |
+| Timer role                   | Interface   | NOT DONE            |
+| Tampilan menang              | Interface   | NOT DONE            |
+| Opsi permainan               | Interface   | NOT DONE            |
 
 <!-- Lisensi -->
 ## Lisensi
