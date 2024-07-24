@@ -33,17 +33,19 @@ Dalam era digital saat ini, teknologi telah memberikan kemajuan yang pesat terha
 <!-- Tujuan dan Manfaat -->
 ## Tujuan dan Manfaat
 
-Manfaat game tic tac toe
-1.Mengembangkan keterampilan pemecahan masalah.
-2.Mengajarkan kesabaran (dan bergiliran).
-3.Memacu pengembangan keterampilan motorik halus dan koordinasi.
+Tujuan dari permainan Tic-Tac-Toe adalah meningkatkan sportivitas dalam bermain dan mengembangkan keterampilan dalam memecahkan suatu masalah.
+
+Manfaat game Tic-Tac-Toe:
+1. Mengembangkan keterampilan pemecahan masalah.
+2. Mengajarkan kesabaran (dan bergiliran).
+3. Memacu pengembangan keterampilan motorik halus dan koordinasi.
 4. Mengajarkan pentingnya aturan.
-5.Meningkatkan respon sistem imun (bermain game dengan orang lain).
-6.Mengajarkan keterampilan strategi.
+5. Meningkatkan respon sistem imun (bermain game dengan orang lain).
+6. Mengajarkan keterampilan strategi.
 7. Mengembangkan pemikiran logis.
-8.Meningkatkan kemampuan konsentrasi dan fokus.
-9.Mengajarkan sportivitas yang baik.
-10.Mengembangkan keterampilan pemecahan masalah.
+8. Meningkatkan kemampuan konsentrasi dan fokus.
+9. Mengajarkan sportivitas yang baik.
+10. Mengembangkan keterampilan pemecahan masalah.
 
 <!-- Penjelasan Program -->
 ## Penjelasan Program
