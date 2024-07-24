@@ -57,7 +57,7 @@ Tic-Tac-Toe adalah permainan papan yang dimainkan oleh dua orang di papan berpet
 
 Bahasa yang digunakan dalam proyek ini:
 - Frontend: HTML/CSS, Javascript
-- Backend: Flask, Node.js
+- Backend: Flask, MongoDB
 
 <!-- Gambar Rancangan Antarmuka -->
 ## Gambar Rancangan Antarmuka
@@ -67,11 +67,19 @@ Bahasa yang digunakan dalam proyek ini:
 <!-- Rencana Pengerjaan Proyek -->
 ## Rencana Pengerjaan Proyek
 
-| Nama                         | Status              |
-| -----------------------------|---------------------|
-| Masuk player 1 dan player 2  | NOT DONE            |
-| Program jalannya permainan   | NOT DONE            |
-| Antarmuka permainan (papan)  | NOT DONE            |
+| Nama                           | Tipe                 | Pembuat        | Status              |
+| -------------------------------|----------------------|----------------|---------------------|
+| Logika tic-tac-toe             | Logic                | Alissa         | NOT DONE            |
+| Masuk player 1 dan player 2    | Database (dynamic)   | Alissa         | NOT DONE            |
+| Room untuk bermain             | Database (dynamic)   | Alissa         | NOT DONE            |
+| Hapus room yang sudah terpakai | Database (dynamic)   | Alissa         | NOT DONE            |
+| Tampilan menu                  | Interface            | Hanna          | NOT DONE            |
+| Papan berpetak 3x3             | Interface            | Hanna          | NOT DONE            |
+| Status role                    | Interface            | Hanna          | NOT DONE            |
+| Timer role                     | Interface            | Hanna          | NOT DONE            |
+| Tampilan menang                | Interface            | Hanna          | NOT DONE            |
+| Ganti tema                     | Interface            | Hanna          | NOT DONE            |
+| Atur volume                    | Interface            | Hanna          | NOT DONE            |
 
 <!-- Lisensi -->
 ## Lisensi
