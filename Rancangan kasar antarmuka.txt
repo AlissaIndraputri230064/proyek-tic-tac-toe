@@ -1,15 +1,24 @@
 Rancangan kasar antarmuka
 
-Langkah-langkah jalannya web
-• Tampilan masuk sebagai player 1 atau player 2, di mana:
-	○ Terdapat dua tombol bagi player 1 dan player 2
-	○ Saat kedua tombol sudah ditekan, maka permainan dapat dimulai
-• Tampilan permainan:
-	○ Papan berpetak 3x3
-	○ Status player 1 dan player 2 yang ditampilkan dalam bentuk teks, contoh 
+Langkah-langkah jalannya web:
+1. Tampilan player masuk:
+	a. Player memasukkan namanya di form pengisian nama.
+	b. Setelah itu, player menekan tombol start, kemudian diarahkan ke room (random matchmaking).
+1. Tampilan masuk sebagai player 1 atau player 2, di mana:
+	a. Terdapat dua tombol bagi player X dan player O.
+	b. Saat kedua tombol sudah ditekan, maka kedua player bisa langsung bermain (ketika tombol play ditekan).
+	c. Terdapat status "bermain dengan siapa" di kanan atas.
+2. Tampilan permainan:
+	a. Papan berpetak 3x3.
+	b. Status player 1 dan player 2 yang ditampilkan dalam bentuk teks, contoh:
 		Player 1 Now Playing               Player 2 Waiting
-	○ Papan terletak di antara teks status player 1 dan player 2 
-• Tampilan pemenang terdapat tulisan "Player 1/2 Wins" di atas papan
-• Tombol restart muncul di bawah papan saat permainan selesai
-• Terdapat tombol pause di pojok kanan atas 
+	c. Papan terletak di antara teks status player 1 dan player 2.
+3. Tampilan pemenang terdapat tulisan "Player 1/2 Wins" di atas papan.
+4. Tombol restart muncul di bawah papan saat permainan selesai.
+5. Terdapat tombol pause di pojok kanan atas.
+6. Isi tombol pause
+	a. Setting: Ganti tema dan atur volume.
+	b. Resume: Melanjutkan permainan.
+	c. Restart: Mengulang permainan.
+	d. Exit: Keluar dari sistem.
 	 

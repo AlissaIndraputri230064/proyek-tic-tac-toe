@@ -28,7 +28,7 @@
 <!-- Latar Belakang -->
 ## Latar Belakang
 
-Dalam era digital saat ini, teknologi telah memberikan kemajuan yang pesat terhadap dunia permainan atau game. Beberapa permainan yang dapat dimainkan melalui beberapa media, seperti kertas, kartu, dll. sudah bisa diprogram dengan bahasa pemrograman, sehingga mereka dapat dimainkan di komputer pribadi, telepon genggam atau handphone, maupun konsol Oleh karenanya, dunia permainan dapat berinovasi dengan pesat di era teknologi yang terus berkembang dengan pesat.
+Dalam era digital saat ini, teknologi telah memberikan kemajuan yang pesat terhadap dunia permainan atau game. Beberapa permainan yang dapat dimainkan melalui beberapa media, seperti kertas, kartu, dll. sudah bisa diprogram dengan bahasa pemrograman, sehingga mereka dapat dimainkan di komputer pribadi, telepon genggam atau handphone, maupun konsol. Oleh karenanya, dunia permainan dapat berinovasi dengan pesat di era teknologi yang terus berkembang dengan pesat.
 
 <!-- Tujuan dan Manfaat -->
 ## Tujuan dan Manfaat
@@ -59,6 +59,12 @@ Bahasa yang digunakan dalam proyek ini:
 - Frontend: HTML/CSS, Javascript
 - Backend: Flask, MongoDB
 
+<!-- Diagram Alir Program -->
+## Diagram Alir Program
+
+![Alt text](TicTacToeDevShakyaPeris.drawio.png)
+Sumber gambar: https://dev.to/shakyapeiris/the-logic-behind-tic-tac-toe-game-32f9 
+
 <!-- Gambar Rancangan Antarmuka -->
 ## Gambar Rancangan Antarmuka
 
@@ -67,12 +73,16 @@ Bahasa yang digunakan dalam proyek ini:
 <!-- Rencana Pengerjaan Proyek -->
 ## Rencana Pengerjaan Proyek
 
-| Nama                           | Tipe                 | Pembuat        | Status              |
+| Nama                           | Bentuk               | Pembuat        | Status              |
 | -------------------------------|----------------------|----------------|---------------------|
-| Logika tic-tac-toe             | Logic                | Alissa         | NOT DONE            |
-| Masuk player 1 dan player 2    | Database (dynamic)   | Alissa         | NOT DONE            |
+| Logika permainan               | Program              | Alissa         | NOT DONE            |
+| Masuk player                   | Database (dynamic)   | Alissa         | NOT DONE            |
+| Player X                       | Database (dynamic)   | Alissa         | NOT DONE            |
+| Player O                       | Database (dynamic)   | Alissa         | NOT DONE            |
 | Room untuk bermain             | Database (dynamic)   | Alissa         | NOT DONE            |
+| Menyimpan progres permainan    | Database (dynamic)   | Alissa         | NOT DONE            |
 | Hapus room yang sudah terpakai | Database (dynamic)   | Alissa         | NOT DONE            |
+| Random matchmaking             | Server               | Alissa         | NOT DONE            |
 | Tampilan menu                  | Interface            | Hanna          | NOT DONE            |
 | Papan berpetak 3x3             | Interface            | Hanna          | NOT DONE            |
 | Status role                    | Interface            | Hanna          | NOT DONE            |
