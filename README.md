@@ -82,7 +82,7 @@ Sumber gambar: https://dev.to/shakyapeiris/the-logic-behind-tic-tac-toe-game-32f
 | Room untuk bermain             | Database (dynamic)   | Alissa         | NOT DONE            |
 | Menyimpan progres permainan    | Database (dynamic)   | Alissa         | NOT DONE            |
 | Hapus room yang sudah terpakai | Database (dynamic)   | Alissa         | NOT DONE            |
-<!-- Random matchmaking          | Server               | Alissa         | NOT DONE            | -->
+| Random matchmaking             | Server               | Alissa         | NOT DONE            | (Not Fixed)
 | Tampilan menu                  | Interface            | Hanna          | NOT DONE            |
 | Papan berpetak 3x3             | Interface            | Hanna          | NOT DONE            |
 | Status role                    | Interface            | Hanna          | NOT DONE            |
