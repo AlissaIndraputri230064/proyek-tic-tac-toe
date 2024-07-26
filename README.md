@@ -78,8 +78,7 @@ Sumber gambar: https://dev.to/shakyapeiris/the-logic-behind-tic-tac-toe-game-32f
 |--------------------------------|----------------------|----------------|---------------------|
 | Logika permainan               | Program              | Alissa         | NOT DONE            |
 | Masuk player                   | Database (dynamic)   | Alissa         | NOT DONE            |
-| Player X                       | Database (dynamic)   | Alissa         | NOT DONE            |
-| Player O                       | Database (dynamic)   | Alissa         | NOT DONE            |
+| Random-generated idPlayer      | Database (dynamic)   | Alissa         | NOT DONE            |
 | Room untuk bermain             | Database (dynamic)   | Alissa         | NOT DONE            |
 | Menyimpan progres permainan    | Database (dynamic)   | Alissa         | NOT DONE            |
 | Hapus room yang sudah terpakai | Database (dynamic)   | Alissa         | NOT DONE            |
