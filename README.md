@@ -63,6 +63,7 @@ Bahasa yang digunakan dalam proyek ini:
 ## Diagram Alir Program
 
 ![Alt text](TicTacToeDevShakyaPeris.drawio.png)
+
 Sumber gambar: https://dev.to/shakyapeiris/the-logic-behind-tic-tac-toe-game-32f9 
 
 <!-- Gambar Rancangan Antarmuka -->
@@ -74,7 +75,7 @@ Sumber gambar: https://dev.to/shakyapeiris/the-logic-behind-tic-tac-toe-game-32f
 ## Rencana Pengerjaan Proyek
 
 | Nama                           | Bentuk               | Pembuat        | Status              |
-| -------------------------------|----------------------|----------------|---------------------|
+|--------------------------------|----------------------|----------------|---------------------|
 | Logika permainan               | Program              | Alissa         | NOT DONE            |
 | Masuk player                   | Database (dynamic)   | Alissa         | NOT DONE            |
 | Player X                       | Database (dynamic)   | Alissa         | NOT DONE            |
@@ -82,7 +83,7 @@ Sumber gambar: https://dev.to/shakyapeiris/the-logic-behind-tic-tac-toe-game-32f
 | Room untuk bermain             | Database (dynamic)   | Alissa         | NOT DONE            |
 | Menyimpan progres permainan    | Database (dynamic)   | Alissa         | NOT DONE            |
 | Hapus room yang sudah terpakai | Database (dynamic)   | Alissa         | NOT DONE            |
-| Random matchmaking             | Server               | Alissa         | NOT DONE            | (Not Fixed)
+| Random matchmaking             | Server               | Alissa         | NOT DONE            |
 | Tampilan menu                  | Interface            | Hanna          | NOT DONE            |
 | Papan berpetak 3x3             | Interface            | Hanna          | NOT DONE            |
 | Status role                    | Interface            | Hanna          | NOT DONE            |
