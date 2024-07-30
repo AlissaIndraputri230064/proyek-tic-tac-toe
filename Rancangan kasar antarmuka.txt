@@ -1,13 +1,11 @@
 Rancangan kasar antarmuka
 
 Langkah-langkah jalannya web:
-1. Tampilan player masuk:
-	a. Player memasukkan namanya di form pengisian nama.
-	b. Setelah itu, player menekan tombol start, kemudian diarahkan ke room (random matchmaking).
-2. Tampilan masuk sebagai player 1 atau player 2, di mana:
+1. Tampilan menu:
+	a. Terdapat tombol start.
+2. Tampilan masuk sebagai player X atau player O, di mana:
 	a. Terdapat dua tombol bagi player X dan player O.
-	b. Saat kedua tombol sudah ditekan, maka kedua player bisa langsung bermain (ketika tombol play ditekan).
-	c. Terdapat status "bermain dengan siapa" di kanan atas.
+	b. Terdapat pemilihan role (bisa random).
 3. Tampilan permainan:
 	a. Papan berpetak 3x3.
 	b. Status player 1 dan player 2 yang ditampilkan dalam bentuk teks, contoh:
