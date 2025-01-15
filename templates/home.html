@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+        <title> Tic Tac Toe</title>
+
+        <style>
+            html, body {
+                margin: 0;
+                height: 100%;
+                padding: 0;
+                font-family: "Short Stack";
+                background-color: #FFFADD;
+            }
+    
+            main {
+                position : absolute;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100vh;
+                z-index: 1;
+            }
+
+            main h1 {
+                color: var(--Orange, #D79517);
+                text-align: center;
+                font-family: "Short Stack";
+                font-size: 96px;
+                font-weight: 400;
+                line-height: normal;
+            }
+    
+            .input {
+                text-align: center; 
+                width: 710px;
+            }
+
+            input{
+                background-color: #8ECDDDA1 !important;
+            }
+
+            input::placeholder{
+                color: #22668D !important;
+            }
+
+            .input input::focus{
+                color: #22668D !important;
+                background-color:  #8ECDDDA1  ;
+            }
+
+            button {
+                width: 190px;
+                height: 40px;
+                margin-top: 20px;
+                font-size: 16px;
+                color: #FFFADD;
+                border-radius: 12px;
+                outline: none;
+                border: none;
+                background-color:  #22668D ;
+            }
+
+            button:hover{
+                background-color:  #1A4F64 ;
+            }
+
+            .information{
+                position : absolute;
+                margin-left: 15px;
+                z-index: 2;
+            }
+
+            .information button{
+                width: 45px;
+                height: 45px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="information">
+            <a href="{{ url_for('information') }}">
+                <button type="button">i</button>
+            </a>
+        </div>
+
+        <main>
+            <h1>TIC TAC TOE</h1>
+            <div class="input">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="X's Player">
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="O's Player">
+                </div>
+            </div>
+            <button type="button" >PLAY</button>
+        </main>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
