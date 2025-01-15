@@ -23,7 +23,8 @@
 <!-- Anggota Tim -->
 ## Anggota Tim
 | NPM           | Name                        |
-| ------------- |-----------------------------|
+| 140810230064 |Alissa Indraputri|
+| 140810230066 |Hanna Evelyn Gultom|
 
 <!-- Latar Belakang -->
 ## Latar Belakang
@@ -68,8 +69,8 @@ Sumber gambar: https://dev.to/shakyapeiris/the-logic-behind-tic-tac-toe-game-32f
 
 <!-- Gambar Rancangan Antarmuka -->
 ## Gambar Rancangan Antarmuka
+https://www.figma.com/design/yNMLTb3nObNnsTV9FDV79f/Tic-tac-toe?node-id=0-1&m=dev
 
-...
 
 <!-- Rencana Pengerjaan Proyek -->
 ## Rencana Pengerjaan Proyek
@@ -81,7 +82,7 @@ Sumber gambar: https://dev.to/shakyapeiris/the-logic-behind-tic-tac-toe-game-32f
 | Room untuk bermain             | Database (dynamic)   | Alissa         | NOT DONE            |
 | Menyimpan progres permainan    | Database (dynamic)   | Alissa         | NOT DONE            |
 | Hapus room yang sudah terpakai | Database (dynamic)   | Alissa         | NOT DONE            |
-| Tampilan menu                  | Interface            | Hanna          | NOT DONE            |
+| Tampilan menu                  | Interface            | Hanna          | DONE           |
 | Papan berpetak 3x3             | Interface            | Hanna          | NOT DONE            |
 | Status role                    | Interface            | Hanna          | NOT DONE            |
 | Timer role                     | Interface            | Hanna          | NOT DONE            |
