@@ -18,8 +18,8 @@
 
 | ID  | Title/Desc               | Asignee | Status        |
 | --- | ------------------------ | ------- | ------------- |
-| 1.1 | Membuat home page        | Hanna   | IN PROGRESS   |
-| 1.2 | Membuat information page | Hanna   | IN PROGRESS   |
+| 1.1 | Membuat home page        | Hanna   | DONE   |
+| 1.2 | Membuat information page | Hanna   | DONE  |
 | 1.3 | Membuat database NoSQL   | Alissa  | IN PROGRESS   |
 
 ## Retrospective 
