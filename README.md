@@ -13,9 +13,9 @@
     <li><a href="#latar-belakang">Latar Belakang</a></li>
     <li><a href="#tujuan-dan-manfaat">Tujuan dan Manfaat</a></li>
     <li><a href="#penjelasan-aplikasi">Penjelasan Program</a></li>
+    <li><a href="#change-log">Change Log</a></li>
     <li><a href="#bahasa-yang-digunakan">Bahasa yang Digunakan</a></li>
     <li><a href="#gambar-rancangan-antarmuka">Gambar Rancangan Antarmuka</a></li>
-    <li><a href="#rencana-pengerjaan-proyek">Rencana Pengerjaan Proyek</a></li>
     <li><a href="#lisensi">Lisensi</a></li>
   </ol>
 </details>
@@ -23,8 +23,8 @@
 <!-- Anggota Tim -->
 ## Anggota Tim
 | NPM           | Name                        |
-| 140810230064 |Alissa Indraputri|
-| 140810230066 |Hanna Evelyn Gultom|
+| 140810230064  | Alissa Indraputri           |
+| 140810230066  | Hanna Evelyn Gultom         |
 
 <!-- Latar Belakang -->
 ## Latar Belakang
@@ -53,6 +53,27 @@ Manfaat game Tic-Tac-Toe:
 
 Tic-Tac-Toe adalah permainan papan yang dimainkan oleh dua orang di papan berpetak 3x3, di mana salah satu pemain menjadi "X" dan yang lain menjadi "O" secara bergantian. Kedua pemain akan menekan papan tersebut saat gilirannya tiba. Pemenang dari permainan ini adalah membuat deretan X atau O secara vertikal, horizontal, ataupun diagonal, contoh XXX atau OOO.
 
+## Change log
+- **[Sprint Planning](changelog/sprint-planning.md) - (date)** 
+   - Membuat home page               
+   - Membuat information page        
+   - Membuat database NoSQL 
+   - Membuat tampilan dasar game page                
+   - Memakai React di Home page dan Information page 
+   - Mengintegrasi nama user ke database             
+   - Logika game
+
+- **[Sprint 1](changelog/sprint-1.md) - (date from 8 January 2025 until 15 January 2025)** 
+   - Membuat home page               
+   - Membuat information page        
+   - Membuat database NoSQL 
+
+- **[Sprint 2](changelog/sprint-2.md) - (date from 16 January 2025 until 23 January 2025)** 
+   - Membuat tampilan dasar game page                
+   - Memakai React di Home page dan Information page 
+   - Mengintegrasi nama user ke database             
+   - Logika game 
+
 <!-- Bahasa yang digunakan -->
 ## Bahasa yang digunakan
 
@@ -70,25 +91,6 @@ Sumber gambar: https://dev.to/shakyapeiris/the-logic-behind-tic-tac-toe-game-32f
 <!-- Gambar Rancangan Antarmuka -->
 ## Gambar Rancangan Antarmuka
 https://www.figma.com/design/yNMLTb3nObNnsTV9FDV79f/Tic-tac-toe?node-id=0-1&m=dev
-
-
-<!-- Rencana Pengerjaan Proyek -->
-## Rencana Pengerjaan Proyek
-
-| Nama                           | Bentuk               | Pembuat        | Status              |
-|--------------------------------|----------------------|----------------|---------------------|
-| Logika permainan               | Program              | Alissa         | NOT DONE            |
-| Masuk player 1 dan 2           | Database (dynamic)   | Alissa         | NOT DONE            |
-| Room untuk bermain             | Database (dynamic)   | Alissa         | NOT DONE            |
-| Menyimpan progres permainan    | Database (dynamic)   | Alissa         | NOT DONE            |
-| Hapus room yang sudah terpakai | Database (dynamic)   | Alissa         | NOT DONE            |
-| Tampilan menu                  | Interface            | Hanna          | DONE           |
-| Papan berpetak 3x3             | Interface            | Hanna          | NOT DONE            |
-| Status role                    | Interface            | Hanna          | NOT DONE            |
-| Timer role                     | Interface            | Hanna          | NOT DONE            |
-| Tampilan menang                | Interface            | Hanna          | NOT DONE            |
-| Ganti tema                     | Interface            | Hanna          | NOT DONE            |
-| Atur volume                    | Interface            | Hanna          | NOT DONE            |
 
 <!-- Lisensi -->
 ## Lisensi
