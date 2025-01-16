@@ -1,5 +1,5 @@
 # Scrum Report (Sprint 1)
-| From 08/01/2025 to 15/01/2025
+ From 08/01/2025 to 15/01/2025
 
 ## Team (Insert your name)
 | NPM           | Name                   |

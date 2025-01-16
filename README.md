@@ -1,7 +1,7 @@
 
 <p align="center">
   <h2 align="center">
-    Proyek
+    Tic Tac Toe
   </h2>
 </p>
 
@@ -23,6 +23,7 @@
 <!-- Anggota Tim -->
 ## Anggota Tim
 | NPM           | Name                        |
+| ------------- | --------------------------- |
 | 140810230064  | Alissa Indraputri           |
 | 140810230066  | Hanna Evelyn Gultom         |
 
