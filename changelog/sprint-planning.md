@@ -14,7 +14,6 @@ Dari 16 Januari 2025 hingga xx Januari 2025
 | 1.2 | Membuat information page                          | Hanna            | 
 | 1.3 | Membuat database NoSQL                            | Alissa           |
 | 2.1 | Membuat tampilan dasar game page                  | Hanna            |
-| 2.2 | Memakai React di Home page dan Information page   | Hanna            | 
 | 2.2 | Mengintegrasi nama user ke database               | Alissa           |
 | 2.3 | Logika game                                       | Alissa           |
 
@@ -34,7 +33,6 @@ Dikarenakan eksplorasi terhadap framework React dan penggunaan NoSQL ke pertama 
 | ID  | Title/Desc                                        | Asignee            | 
 | --- | ------------------------------------------------- | ------------------ | 
 | 2.1 | Membuat tampilan dasar game page                  | Hanna              |
-| 2.2 | Memakai React di Home page dan Information page   | Hanna              | 
 | 2.2 | Mengintegrasi nama user ke database               | Alissa             |
 | 2.3 | Logika game                                       | Alissa             |
 

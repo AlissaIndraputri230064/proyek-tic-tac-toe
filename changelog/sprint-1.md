@@ -24,7 +24,6 @@
 
 ## Retrospective 
 1. Challenges (Tantangan)
-    - Sempat terkendala memasukkan framework React
 2. Accomplishment (Pencapaian)
     - Berhasil menyelesaikan tugas sesuai deadline
 3. Area for Improvement (Area untuk Ditingkatkan)
@@ -35,6 +34,5 @@
 | ID  | Title/Desc                                        | Asignee            | 
 | --- | ------------------------------------------------- | ------------------ | 
 | 2.1 | Membuat tampilan dasar game page                  | Hanna              |
-| 2.2 | Memakai React di Home page dan Information page   | Hanna              | 
 | 2.2 | Mengintegrasi nama user ke database               | Alissa             |
 | 2.3 | Logika game                                       | Alissa             |
