@@ -1,0 +1,16 @@
+{
+  "name": "proyek-tic-tac-toe",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <h2 align=\"center\">\r     Tic Tac Toe\r   </h2>\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./tailwind.css -o ./static/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
