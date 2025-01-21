@@ -91,11 +91,11 @@ function clickBoard(event) {
 
         const result = checkWinner();
         if (result === 'win') {
-            resultDisplay.textContent = 'Menang';
+            resultDisplay.textContent = `${currentPlayer}'s Win`;
             //resetBoard();
             return;
         } else if (result === 'draw') {
-            resultDisplay.textContent = 'Seri';
+            resultDisplay.textContent = 'Draw';
             //resetBoard();
             return;
         }
