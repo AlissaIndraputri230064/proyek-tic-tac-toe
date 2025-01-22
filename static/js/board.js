@@ -87,22 +87,26 @@ function clickBoard(event) {
     const clickedItem = event.target;
 
     if (clickedItem.textContent === '') {
-        clickedItem.textContent = currentPlayer; 
-
+        clickedItem.textContent = currentPlayer;
         const result = checkWinner();
         if (result === 'win') {
             resultDisplay.textContent = `${currentPlayer}'s Win`;
-            //resetBoard();
+            setTimeout(function(){
+                resetBoard();
+            }, 1000);
             return;
         } else if (result === 'draw') {
             resultDisplay.textContent = 'Draw';
-            //resetBoard();
+            resetBoard();
             return;
         }
-        
         currentPlayer = (currentPlayer === 'X') ? 'O' : 'X';
     }
 }
+
+
+
+
 
 items.forEach(item => {
     item.addEventListener('click', clickBoard);
