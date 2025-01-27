@@ -76,28 +76,39 @@ const checkWinner = () => {
 }
 
 function resetBoard() {
+    // Mengembalikan pointer-events agar papan bisa diklik kembali
     items.forEach(item => {
-        item.textContent = '';
+        item.style.pointerEvents = 'auto';  // Mengaktifkan kembali interaksi
+        item.textContent = '';             // Menghapus teks atau gambar pada elemen papan
     });
+
+    // Lakukan reset status permainan lainnya jika perlu
+    currentPlayer = 'X';  // Atau pemain pertama
+    resultDisplay.textContent = ' ';  
 }
+
 
 const resultDisplay = document.getElementById('result');
 
 function clickBoard(event) {
     const clickedItem = event.target;
-
     if (clickedItem.textContent === '') {
         clickedItem.textContent = currentPlayer;
         const result = checkWinner();
         if (result === 'win') {
             resultDisplay.textContent = `${currentPlayer}'s Win`;
+            items.forEach(item => {
+                item.style.pointerEvents = 'none';  // Menonaktifkan interaksi dengan elemen
+            });
             setTimeout(function(){
                 resetBoard();
-            }, 1000);
+            }, 2000);
             return;
         } else if (result === 'draw') {
             resultDisplay.textContent = 'Draw';
-            resetBoard();
+            setTimeout(function(){
+                resetBoard();
+            }, 2000);
             return;
         }
         currentPlayer = (currentPlayer === 'X') ? 'O' : 'X';
