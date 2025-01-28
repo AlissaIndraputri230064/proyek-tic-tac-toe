@@ -8,14 +8,18 @@ Dari 16 Januari 2025 hingga xx Januari 2025
 | 140810230066  | Hanna Evelyn Gultom     |
 
 ## Sprint Backlog Keseluruhan 
-| ID  | Title/Desc                                        | Asignee          |
-| --- | ------------------------------------------------- | ---------------- |  
-| 1.1 | Membuat home page                                 | Hanna            | 
-| 1.2 | Membuat information page                          | Hanna            | 
-| 1.3 | Membuat database NoSQL                            | Alissa           |
-| 2.1 | Membuat tampilan dasar game page                  | Hanna            |
-| 2.2 | Mengintegrasi nama user ke database               | Alissa           |
-| 2.3 | Logika game                                       | Alissa           |
+| ID  | Title/Desc                                            | Asignee          |
+| --- | ----------------------------------------------------- | ---------------- |  
+| 1.1 | Membuat home page                                     | Hanna            | 
+| 1.2 | Membuat information page                              | Hanna            | 
+| 1.3 | Membuat database NoSQL                                | Alissa           |
+| 2.1 | Membuat tampilan dasar game page                      | Hanna            |
+| 2.2 | Memakai Tailwind di Home page dan Information page    | Hanna            |
+| 2.3 | Mengintegrasi nama user ke database                   | Alissa           |
+| 2.4 | Logika game                                           | Alissa           |
+| 3.1 | Mengintegrasi nama user ke database                   | Alissa           |
+| 3.2 | Mengintegrasi riwayat main user ke database           | Alissa           |
+| 3.3 | Membuat timer, poin, dan tampilan setting             | Hanna            | 
 
 
 ## Sprint Backlog plan (Sprint 1)
@@ -27,13 +31,24 @@ Dari 16 Januari 2025 hingga xx Januari 2025
 | 1.3 | Membuat database NoSQL   | Alissa  |
 
 ## Retrospective 
-Dikarenakan eksplorasi terhadap framework React dan penggunaan NoSQL ke pertama kalinya, sprint ini masih ada yang perlu dikembangkan.
+Dikarenakan eksplorasi terhadap framework Tailwind dan penggunaan NoSQL ke pertama kalinya, sprint ini masih ada yang perlu dikembangkan.
 
-## Sprint Backlog (Sprint 2)
-| ID  | Title/Desc                                        | Asignee            | 
-| --- | ------------------------------------------------- | ------------------ | 
-| 2.1 | Membuat tampilan dasar game page                  | Hanna              |
-| 2.2 | Mengintegrasi nama user ke database               | Alissa             |
-| 2.3 | Logika game                                       | Alissa             |
+## Sprint Backlog plan (Sprint 2)
+| ID  | Title/Desc                                            | Asignee            | 
+| --- | ----------------------------------------------------- | ------------------ | 
+| 2.1 | Membuat tampilan dasar game page                      | Hanna              |
+| 2.2 | Memakai Tailwind di Home page dan Information page    | Hanna              |
+| 2.3 | Mengintegrasi nama user ke database                   | Alissa             |
+| 2.4 | Logika game                                           | Alissa             |
+
+## Retrospective
+Gagal mengintegrasi pemain ke database karena eror.
+
+## Sprint Backlog plan (Sprint 3)
+| ID  | Title/Desc                                        | Asignee       | 
+| --- | ------------------------------------------------- | ------------- | 
+| 3.1 | Mengintegrasi nama user ke database               | Alissa        |    
+| 3.2 | Mengintegrasi riwayat main user ke database       | Alissa        |
+| 3.3 | Membuat timer, poin, dan tampilan setting         | Hanna         |
 
 ## Retrospective
