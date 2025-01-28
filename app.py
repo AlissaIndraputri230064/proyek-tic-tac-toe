@@ -1,17 +1,17 @@
 from flask import Flask, render_template, request, redirect, url_for
-# from pymongo import MongoClient
+from pymongo import MongoClient
 
 app = Flask (__name__)
 
-# client = MongoClient("mongodb://localhost:27017/")
-# db = client("tic-tac'-toe")
-# collection = db["players"]
+client = MongoClient("mongodb://localhost:27017/")
+db = client["tic-tac-toe"]
+collection = db["players"]
 
 @app.route('/')
 def home() : 
     return render_template('home.html')
 
-@app.route('/insert_player', methods=["POST", "GET"])
+@app.route('/insert_player', methods=["POST"])
 def insert_player():
     playerx = request.form.get("playerx")
     playero = request.form.get("playero")
