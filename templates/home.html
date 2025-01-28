@@ -46,10 +46,15 @@
                 background-color: #8ECDDDA1 
                 !important;
                 height: 50px;
+                color : #22668D !important;
             }
 
             input::placeholder{
                 color: #22668D !important;
+            }
+
+            input:focus{
+                color : #22668D !important;
             }
 
             .input input::focus{
@@ -104,7 +109,9 @@
                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="O's Player">
                 </div>
             </div>
-            <button type="button" >PLAY</button>
+            <a href="{{ url_for('game')}}">
+                <button type="button">PLAY</button>
+            </a>
         </main>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -24,17 +24,16 @@
 
 ## Retrospective 
 1. Challenges (Tantangan)
-    - Sempat terkendala memasukkan framework React
 2. Accomplishment (Pencapaian)
     - Berhasil menyelesaikan tugas sesuai deadline
 3. Area for Improvement (Area untuk Ditingkatkan)
     - Memahami lebih dalam tentang NoSQL dengan MongoDB
-    - Memahami lebih dalam tentang framework React
+    - Memahami lebih dalam tentang framework Tailwind
 
 ## Next Sprint Backlog (Sprint 2)
-| ID  | Title/Desc                                        | Asignee            | 
-| --- | ------------------------------------------------- | ------------------ | 
-| 2.1 | Membuat tampilan dasar game page                  | Hanna              |
-| 2.2 | Memakai React di Home page dan Information page   | Hanna              | 
-| 2.2 | Mengintegrasi nama user ke database               | Alissa             |
-| 2.3 | Logika game                                       | Alissa             |
+| ID  | Title/Desc                                            | Asignee       | 
+| --- | ----------------------------------------------------- | ------------- | 
+| 2.1 | Membuat tampilan dasar game page                      | Hanna         | 
+| 2.2 | Memakai Tailwind di Home page dan Information page    | Hanna         |
+| 2.3 | Mengintegrasi nama user ke database                   | Alissa        |
+| 2.4 | Logika game                                           | Alissa        |
