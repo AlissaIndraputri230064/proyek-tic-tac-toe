@@ -76,17 +76,19 @@ const checkWinner = () => {
 }
 
 function resetBoard() {
-    // Mengembalikan pointer-events agar papan bisa diklik kembali
     items.forEach(item => {
-        item.style.pointerEvents = 'auto';  // Mengaktifkan kembali interaksi
-        item.textContent = '';             // Menghapus teks atau gambar pada elemen papan
+        item.style.pointerEvents = 'auto';  
+        item.textContent = '';             
     });
 
-    // Lakukan reset status permainan lainnya jika perlu
-    currentPlayer = 'X';  // Atau pemain pertama
+    currentPlayer = 'X';  
     resultDisplay.textContent = ' ';  
+    resultDisplay.innerHTML = '<br>';
 }
 
+items.forEach(item => {
+    item.addEventListener('click', clickBoard);
+});
 
 const resultDisplay = document.getElementById('result');
 
@@ -97,8 +99,9 @@ function clickBoard(event) {
         const result = checkWinner();
         if (result === 'win') {
             resultDisplay.textContent = `${currentPlayer}'s Win`;
+            scoring();
             items.forEach(item => {
-                item.style.pointerEvents = 'none';  // Menonaktifkan interaksi dengan elemen
+                item.style.pointerEvents = 'none';  
             });
             setTimeout(function(){
                 resetBoard();
@@ -106,6 +109,7 @@ function clickBoard(event) {
             return;
         } else if (result === 'draw') {
             resultDisplay.textContent = 'Draw';
+            scoring();
             setTimeout(function(){
                 resetBoard();
             }, 2000);
@@ -116,10 +120,18 @@ function clickBoard(event) {
 }
 
 
+let scoreX = parseInt(document.getElementById('score-x').textContent);
+let scoreO = parseInt(document.getElementById('score-o').textContent);
 
 
+function scoring() {
+    if (currentPlayer === 'X') {
+        scoreX += 1;
+        document.getElementById('score-x').textContent = scoreX;  
+    } else if (currentPlayer === 'O') {
+        scoreO += 1;
+        document.getElementById('score-o').textContent = scoreO;  
+    }
+}
 
-items.forEach(item => {
-    item.addEventListener('click', clickBoard);
-});
 
