@@ -12,11 +12,11 @@
         <div class="h-screen flex justify-center items-center">
             <div class="text-center space-y-5">
                 <h1 class="text-6xl text-navy">TIC TAC TOE</h1>
-                <div class="grid grid-rows-3 gap-y-6">
-                    <a href="">
+                <div class="grid grid-rows-3 gap-y-6 text-orange">
+                    <a href="{{ url_for('game')}}">
                         <button class="text-5xl">Resume</button>
                     </a>
-                    <a href="">
+                    <a href="{{ url_for('game')}}">
                         <button class="text-5xl">Restart</button>
                     </a>
                     <a href="{{ url_for('home')}}">
