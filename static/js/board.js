@@ -98,6 +98,7 @@ function clickBoard(event) {
         clickedItem.textContent = currentPlayer;
         const result = checkWinner();
         if (result === 'win') {
+            resultDisplay.classList.add('text-lg');
             resultDisplay.textContent = `${currentPlayer}'s Win`;
             scoring();
             items.forEach(item => {
@@ -109,7 +110,6 @@ function clickBoard(event) {
             return;
         } else if (result === 'draw') {
             resultDisplay.textContent = 'Draw';
-            scoring();
             setTimeout(function(){
                 resetBoard();
             }, 2000);
@@ -132,6 +132,10 @@ function scoring() {
         scoreO += 1;
         document.getElementById('score-o').textContent = scoreO;  
     }
+}
+
+function timer(){
+
 }
 
 

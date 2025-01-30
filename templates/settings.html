@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+        <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+        <title>Tic Tac Toe</title>
+    </head>
+    
+    <body class="bg-yellow font-ShortShack">
+        <div class="h-screen flex justify-center items-center">
+            <div class="text-center space-y-5">
+                <h1 class="text-6xl text-navy">TIC TAC TOE</h1>
+                <div class="grid grid-rows-3 gap-y-6">
+                    <a href="">
+                        <button class="text-5xl">Resume</button>
+                    </a>
+                    <a href="">
+                        <button class="text-5xl">Restart</button>
+                    </a>
+                    <a href="{{ url_for('home')}}">
+                        <button class="text-5xl">Exit</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='js/board.js') }}"></script>
+    </body>
+</html>
