@@ -1,4 +1,4 @@
-
+//Board
 const board = document.querySelector('.board');
 const items = [
     document.getElementById('item1'),
@@ -14,6 +14,7 @@ const items = [
 
 let currentPlayer = 'X'; 
 
+//Winner Checker
 const checkWinner = () => {
     const board = [
         [items[0].textContent, items[1].textContent, items[2].textContent],
@@ -75,6 +76,7 @@ const checkWinner = () => {
     return 'draw';
 }
 
+//Reset Board
 function resetBoard() {
     items.forEach(item => {
         item.style.pointerEvents = 'auto';  
@@ -92,37 +94,75 @@ items.forEach(item => {
 
 const resultDisplay = document.getElementById('result');
 
+//Timer
+let intervalId;
+let count = 5; 
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    timer();  
+});
+
+function timer() {
+    resultDisplay.textContent = `${currentPlayer}'s turn in ${count}s`;
+    if (intervalId) {
+        clearInterval(intervalId);
+    }
+
+    intervalId = setInterval(function() {
+        count -= 1; 
+        resultDisplay.textContent = `${currentPlayer}'s turn in ${count}s`;
+
+        if (count === 0) {
+            currentPlayer = (currentPlayer === 'X') ? 'O' : 'X';
+            count = 5; 
+        }
+    }, 1000);  
+}
+
+//Click on board
 function clickBoard(event) {
     const clickedItem = event.target;
     if (clickedItem.textContent === '') {
         clickedItem.textContent = currentPlayer;
         const result = checkWinner();
+        const winner = currentPlayer;
+
         if (result === 'win') {
+            clearInterval(intervalId); 
             resultDisplay.classList.add('text-lg');
-            resultDisplay.textContent = `${currentPlayer}'s Win`;
+            resultDisplay.textContent = `${winner}'s Win`;
             scoring();
             items.forEach(item => {
                 item.style.pointerEvents = 'none';  
             });
             setTimeout(function(){
                 resetBoard();
+                count = 5;
+                timer();
             }, 2000);
             return;
         } else if (result === 'draw') {
+            clearInterval(intervalId); 
             resultDisplay.textContent = 'Draw';
             setTimeout(function(){
                 resetBoard();
+                count = 5;
+                timer();
             }, 2000);
             return;
         }
+
+        clearInterval(intervalId);
         currentPlayer = (currentPlayer === 'X') ? 'O' : 'X';
+        count = 5;  
+        timer();  
+
     }
 }
 
-
+//Scoring
 let scoreX = parseInt(document.getElementById('score-x').textContent);
 let scoreO = parseInt(document.getElementById('score-o').textContent);
-
 
 function scoring() {
     if (currentPlayer === 'X') {
@@ -134,8 +174,6 @@ function scoring() {
     }
 }
 
-function timer(){
 
-}
 
 
