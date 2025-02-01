@@ -20,7 +20,7 @@
 | --- | ------------------------------------------------- | --------- | ------------- |
 | 3.1 | Mengintegrasi nama user ke database               | Alissa    | IN PROGRESS   |
 | 3.2 | Mengintegrasi riwayat main user ke database       | Alissa    | IN PROGRESS   |
-| 3.3 | Membuat timer, poin, dan tampilan setting         | Hanna     | IN PROGRESS   | 
+| 3.3 | Membuat timer, poin, dan tampilan setting         | Hanna     | DONE   | 
 
 ## Retrospective 
 1. Challenges (Tantangan)
