@@ -101,13 +101,13 @@
         <main>
             <h1>TIC TAC TOE</h1>
             <div class="input">
-                <form action="/insert_player">
-                    <div class="mb-3" method="POST">
-                        <input type="text" class="form-control" id="playerx" placeholder="X's Player">
+                <form action="/insert_player" method="POST">
+                    <div class="mb-3" >
+                        <input type="text" class="form-control" name="playerx" placeholder="X's Player">
                     </div>
 
-                    <div class="mb-3" method="POST">
-                        <input type="text" class="form-control" id="playero" placeholder="O's Player">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" name="playero" placeholder="O's Player">
                     </div>
 
                     <button type="submit">PLAY</button>
