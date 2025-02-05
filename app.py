@@ -11,20 +11,29 @@ collection = db["players"]
 def home() : 
     return render_template('home.html')
 
-@app.route('/insert_player', methods=["POST", "GET"])
+@app.route('/insert_player', methods=["POST"])
 def insert_player():
-    playerx = request.form.get("playerx")
-    playero = request.form.get("playero")
+    try:
+        playerx = request.form.get("playerx")
+        playero = request.form.get("playero")
 
-    if not playerx or not playero:
-        return "Nama player harus diisi"
+        print("Received Player X:", playerx)  # Debugging output
+        print("Received Player O:", playero)  # Debugging output
 
-    collection.insert_many([
-        {"player_name": playerx, "role": "X", "wins": {"x": 0, "o": 0}},
-        {"player_name": playero, "role": "O", "wins": {"x": 0, "o": 0}}
-    ])
+        if not playerx or not playero:
+            return "Nama player harus diisi", 400
 
-    return redirect("/game")
+        result = collection.insert_many([
+            {"player_name": playerx, "role": "X", "wins": {"x": 0, "o": 0}},
+            {"player_name": playero, "role": "O", "wins": {"x": 0, "o": 0}}
+        ])
+
+        print("Inserted IDs:", [str(id) for id in result.inserted_ids])  # Debugging outpu
+        return redirect("/game")
+
+    except Exception as e:
+        print("Error:", e)
+        return "An error occurred: " + str(e), 500
 
 @app.route('/information')
 def information(): 
