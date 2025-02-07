@@ -1,39 +1,70 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, jsonify, url_for
 from pymongo import MongoClient
 
 app = Flask (__name__)
 
+# Koneksi ke MongoDB
 client = MongoClient("mongodb://localhost:27017/")
 db = client["tic-tac-toe"]
-collection = db["players"]
+collection = db["games"]
 
-@app.route('/')
-def home() : 
-    return render_template('home.html')
-
-@app.route('/insert_player', methods=["POST"])
-def insert_player():
+# Insert game (dokumen)
+@app.route('/insert_game', methods=["POST"])
+def insert_game():
     try:
         playerx = request.form.get("playerx")
         playero = request.form.get("playero")
 
-        print("Received Player X:", playerx)  # Debugging output
-        print("Received Player O:", playero)  # Debugging output
-
         if not playerx or not playero:
             return "Nama player harus diisi", 400
 
-        result = collection.insert_many([
-            {"player_name": playerx, "role": "X", "wins": {"x": 0, "o": 0}},
-            {"player_name": playero, "role": "O", "wins": {"x": 0, "o": 0}}
-        ])
+        new_game = collection.insert_one({
+            "playerx": playerx, 
+            "playero": playero, 
+            "pointx": 0, 
+            "pointo": 0
+        })
 
-        print("Inserted IDs:", [str(id) for id in result.inserted_ids])  # Debugging outpu
+        game_id = new_game.inserted_id
+
+        # Debugging output untuk mengecek apakah data berhasil masuk
+        print("Received Player X:", playerx)  
+        print("Received Player O:", playero)  
+        print("Inserted game _id:", game_id)  
+
+        # points insertion
+
         return redirect("/game")
 
     except Exception as e:
         print("Error:", e)
         return "An error occurred: " + str(e), 500
+    
+# Update poin pemain
+@app.route('/update_point', methods=["POST"])
+def update_point():
+    data = request.json
+    winner = data.get("winner")
+
+    if not winner:
+        return jsonify({"error": "Nama pemenang harus ada"}), 400
+    
+    # Update poin pemain dari JSON
+    update_field = "scores.pointx" if winner == "playerx" else "scores.pointo"
+
+    result = collection.update_one(
+        {},
+        {"$inc": {update_field}}
+    )
+
+    if result.modified_count > 0:
+        return jsonify({"message": f"Poin {winner} +1"})
+    else:
+        return jsonify({"error": "Dokumen tidak tersedia"})
+
+@app.route('/')
+def home() : 
+    return render_template('home.html')
 
 @app.route('/information')
 def information(): 

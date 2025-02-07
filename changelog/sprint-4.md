@@ -19,7 +19,7 @@
 | ID  | Title/Desc                                        | Asignee   | Status        |
 | --- | ------------------------------------------------- | --------- | ------------- |
 | 4.1 | Membuat save and load state                       | Alissa    | IN PROGRESS   |
-| 4.2 | Mengubah struktur dokumen JSON                    | Alissa    | IN PROGRESS   |
+| 4.2 | Mengubah struktur dokumen JSON                    | Alissa    | DONE          |
 | 4.3 | Membuat alert jika nama tidak terisi              | Hanna     | IN PROGRESS   | 
 
 ## Retrospective 
