@@ -29,7 +29,6 @@ const checkWinner = () => {
         const c = board[i][2];
 
         if (a != '' && a === b && b === c) {
-            scoring();
             return 'win';
         }
     }
@@ -41,7 +40,6 @@ const checkWinner = () => {
         const c = board[2][i];
 
         if (a != '' && a === b && b === c) {
-            scoring();
             return 'win';
         }
     }
@@ -53,7 +51,6 @@ const checkWinner = () => {
         const c = board[2][2];
 
         if (a != '' && a === b && b === c) {
-            scoring();
             return 'win';
         }
     }
@@ -65,7 +62,6 @@ const checkWinner = () => {
         const f = board[2][0];
 
         if (d != '' && d === e && e === f) {
-            scoring();
             return 'win';
         }
     }
@@ -168,7 +164,7 @@ function clickBoard(event) {
 let scoreX = parseInt(document.getElementById('score-x').textContent);
 let scoreO = parseInt(document.getElementById('score-o').textContent);
 
-function scoring() {
+async function scoring() {
     let winner = "";
 
     if (currentPlayer === 'X') {
@@ -184,10 +180,8 @@ function scoring() {
     // Objek JSON
     let scoreData = {
         "winner": winner,
-        "scores": {
-            "pointx": scoreX,
-            "pointo": scoreO
-        }
+        "pointx": scoreX,
+        "pointo": scoreO
     };
 
     let stringify_json = JSON.stringify(scoreData);
@@ -195,14 +189,22 @@ function scoring() {
     console.log(stringify_json);
 
     // JSON ke Flask
-    fetch("/update_point", {
+    await fetch("/update_point", {
         method: "POST", 
         headers: { "Content-Type": "application/json" },
         body: stringify_json
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
     .then(data => console.log(data.message))
-    .catch(error => console.error("Error:", error))
+    .catch(error => {
+        console.error("Error:", error);
+        alert("Failed to update score. Please try again later.");
+    });
 }
 
 
