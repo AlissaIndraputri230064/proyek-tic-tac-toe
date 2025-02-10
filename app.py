@@ -16,8 +16,8 @@ def insert_game():
         playerx = request.form.get("playerx")
         playero = request.form.get("playero")
 
-        if not playerx or not playero:
-            return "Nama player harus diisi", 400
+        # if not playerx or not playero:
+        #     return "Nama player harus diisi", 400
 
         new_game = collection.insert_one({
             "playerx": playerx, 
