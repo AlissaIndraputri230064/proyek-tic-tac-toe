@@ -77,12 +77,27 @@ const checkWinner = () => {
 }
 
 // Simpan sementara board
-function boardSave() {
-    // kela euy
+function boardSave(items, size = 3) {
+    if (!Array.isArray(items) || items.length !== size * size) {
+        throw new Error("Item tidak ada");
+    }
+
+    let tempBoard = [];
+    for (let i = 0; i < size; i++) {
+        let row = [];
+        for (let j = 0; j < size; j++) {
+            let cell = items[i * size + j];
+            row.push(cell && cell.textContent ? cell.textContent : "");
+        }
+        tempBoard.push(row);
+    }
+    //checkWinner(tempBoard);
+    return tempBoard;
 }
 
-function boardLoad() {
-    // kela euy
+// Mengembalikan board yang disimpan sementara
+function boardLoad(items) {
+    return boardSave(items);
 }
 
 //Reset Board
