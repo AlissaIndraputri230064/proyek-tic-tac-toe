@@ -76,6 +76,11 @@ const checkWinner = () => {
     return 'draw';
 }
 
+// Simpan sementara board
+function boardSaveAndLoad() {
+    // nanti ajah yah
+}
+
 //Reset Board
 function resetBoard() {
     items.forEach(item => {
