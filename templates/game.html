@@ -5,14 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
-        <audio autoplay>
+        <audio autoplay id="audioSet">
             <source src="{{ url_for('static', filename='source/bgm.mp3') }}" type="audio/mp3">
         </audio>        
         <title>Tic Tac Toe</title>
     </head>
 
     <body class="bg-yellow font-ShortShack ">
-
         <div class="flex justify-end">
             <a href="{{ url_for('settings')}}">
                 <button class ="bg-red w-32 h-11 mt-5 mr-5 text-yellow rounded-xl" onclick="boardSave()">Pause</button>
@@ -56,5 +55,6 @@
         </div>
 
         <script src="{{ url_for('static', filename='js/board.js') }}"></script>
+
     </body>
 </html>
