@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const alertBox = document.getElementById('formAlert');
+    const alertContent = document.querySelector('.alertContent'); 
     const okButton = document.getElementById('okButton');
 
     function showAlert() {
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (formX.trim() === '' || formO.trim() === '') {
             showAlert();
-            return false; // Mencegah form dikirim
+            return false; 
         }
         return true;
     }
