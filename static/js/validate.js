@@ -1,3 +1,4 @@
+//alert set
 document.addEventListener("DOMContentLoaded", function () {
     const alertBox = document.getElementById('formAlert');
     const alertContent = document.querySelector('.alertContent'); 
