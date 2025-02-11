@@ -77,8 +77,12 @@ const checkWinner = () => {
 }
 
 // Simpan sementara board
-function boardSaveAndLoad() {
-    // nanti ajah yah
+function boardSave() {
+    // kela euy
+}
+
+function boardLoad() {
+    // kela euy
 }
 
 //Reset Board
