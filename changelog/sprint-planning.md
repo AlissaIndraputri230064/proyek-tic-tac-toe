@@ -1,5 +1,5 @@
 # Sprint Planning 
-Dari 16 Januari 2025 hingga xx Januari 2025
+Dari 16 Januari 2025 hingga xx xxxxxxx 2025
 
 ### Team
 | NPM           | Name                    |
@@ -18,8 +18,10 @@ Dari 16 Januari 2025 hingga xx Januari 2025
 | 2.3 | Mengintegrasi nama user ke database                   | Alissa           |
 | 2.4 | Logika game                                           | Alissa           |
 | 3.1 | Mengintegrasi nama user ke database                   | Alissa           |
-| 3.2 | Mengintegrasi riwayat main user ke database           | Alissa           |
-| 3.3 | Membuat timer, poin, dan tampilan setting             | Hanna            | 
+| 3.2 | Membuat timer, poin, dan tampilan setting             | Hanna            | 
+| 4.1 | Membuat save and load state                           | Alissa           |
+| 4.2 | Mengubah struktur dokumen JSON                        | Alissa           |
+| 4.3 | Membuat alert jika nama tidak terisi                  | Hanna            |
 
 
 ## Sprint Backlog plan (Sprint 1)
