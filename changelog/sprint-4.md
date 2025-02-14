@@ -10,17 +10,17 @@
 ## Sprint Overview
 | Planned (n)                                        | Completed (n)     |
 | -------------------------------------------------- |------------------ |
-| 4.1 | Membuat save and load state                  | Incompleted       |
-| 4.2 | Mengubah struktur dokumen JSON               | Incompleted       |
-| 4.3 | Membuat alert jika nama tidak terisi         | Incompleted       |
+| 4.1 | Membuat save and load state                  | completed         |
+| 4.2 | Mengubah struktur dokumen JSON               | completed         |
+| 4.3 | Membuat alert jika nama tidak terisi         | completed         |
 
 ## Sprint 4 Backlog
 
 | ID  | Title/Desc                                        | Asignee   | Status        |
 | --- | ------------------------------------------------- | --------- | ------------- |
-| 4.1 | Membuat save and load state                       | Alissa    | IN PROGRESS   |
+| 4.1 | Membuat save and load state                       | Alissa    | FAILED        |
 | 4.2 | Mengubah struktur dokumen JSON                    | Alissa    | DONE          |
-| 4.3 | Membuat alert jika nama tidak terisi              | Hanna     | IN PROGRESS   | 
+| 4.3 | Membuat alert jika nama tidak terisi              | Hanna     | DONE          | 
 
 ## Retrospective 
 1. Challenges (Tantangan)

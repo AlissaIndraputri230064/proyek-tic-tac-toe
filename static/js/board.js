@@ -77,7 +77,8 @@ const checkWinner = () => {
 }
 
 // Simpan sementara board
-function boardSave(items, size = 3) {
+function boardSave(items, size = 3, storageKey = "tempBoard") {
+    
     if (!Array.isArray(items) || items.length !== size * size) {
         throw new Error("Item tidak ada");
     }
@@ -91,13 +92,45 @@ function boardSave(items, size = 3) {
         }
         tempBoard.push(row);
     }
-    //checkWinner(tempBoard);
+
+    try {
+        localStorage.setItem(storageKey, JSON.stringify(tempBoard));
+        console.log("Board berhasil di-save", tempBoard);
+    } catch (error) {
+        console.error("Board tidak bisa di-save", error);
+    }
+
     return tempBoard;
 }
 
 // Mengembalikan board yang disimpan sementara
-function boardLoad(items) {
-    return boardSave(items);
+function boardLoad(storageKey = "tempBoard") {
+    const savedBoard = localStorage.getItem(storageKey);
+
+    if (savedBoard) {
+        try {
+            return JSON.parse(savedBoard);
+        } catch (error) {
+            console.error("Board tidak bisa di-load", error);
+            return null;
+        }
+    } else {
+        return null;
+    }
+}
+
+function updateBoard(boardData, boardItem) {
+    if (!boardData || !boardItem || boardItem.length !== boardData.length * boardData[0].length) {
+        console.error("Data atau item invalid");
+        return null;
+    }
+
+    const size = boardData.length;
+    for (let i = 0; i < size; i++) {
+        for (let j = 0; j < size; j++) {
+            boardItem[i * size + j].textContent = boardData[i][j];
+        }
+    }
 }
 
 //Reset Board
@@ -150,6 +183,14 @@ function clickBoard(event) {
         clickedItem.textContent = currentPlayer;
         const result = checkWinner();
         const winner = currentPlayer;
+
+        let savedBoard = boardSave(items);
+
+        let loadedBoard = boardLoad();
+
+        if (loadedBoard) {
+            updateBoard(loadedBoard, items);
+        }
 
         if (result === 'win') {
             clearInterval(intervalId); 
