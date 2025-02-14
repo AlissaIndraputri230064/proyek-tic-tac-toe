@@ -47,8 +47,18 @@ Gagal mengintegrasi pemain ke database karena eror.
 ## Sprint Backlog plan (Sprint 3)
 | ID  | Title/Desc                                        | Asignee       | 
 | --- | ------------------------------------------------- | ------------- | 
-| 3.1 | Mengintegrasi nama user ke database               | Alissa        |    
-| 3.2 | Mengintegrasi riwayat main user ke database       | Alissa        |
-| 3.3 | Membuat timer, poin, dan tampilan setting         | Hanna         |
+| 3.1 | Mengintegrasi nama user ke database               | Alissa        |
+| 3.2 | Membuat timer, poin, dan tampilan setting         | Hanna         |
 
 ## Retrospective
+Kesalahan dalam penulisan sintaks menyebabkan integrasi ke database gagal
+
+## Sprint Backlog plan (Sprint 4)
+| ID  | Title/Desc                                        | Asignee   |
+| --- | ------------------------------------------------- | --------- |
+| 4.1 | Membuat save and load state                       | Alissa    |
+| 4.2 | Mengubah struktur dokumen JSON                    | Alissa    |
+| 4.3 | Membuat alert jika nama tidak terisi              | Hanna     |
+
+## Retrospective
+Pembuatan load state masih perlu diperbaiki karena ada kesalahan di bagian logika
