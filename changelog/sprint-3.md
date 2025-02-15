@@ -11,15 +11,14 @@
 | Planned (n)                                        | Completed (n)     |
 | -------------------------------------------------- |------------------ |
 | 3.1 | Mengintegrasi nama user ke database          | Completed         |
-| 3.2 | Mengintegrasi riwayat main user ke database  | Completed         |
-| 3.3 | Membuat timer, poin, dan tampilan setting    | Completed         |
+| 3.2 | Membuat timer, poin, dan tampilan setting    | Completed         |
 
 ## Sprint 3 Backlog
 
 | ID  | Title/Desc                                        | Asignee   | Status        |
 | --- | ------------------------------------------------- | --------- | ------------- |
 | 3.1 | Mengintegrasi nama user ke database               | Alissa    | INCOMPLETED   |
-| 3.3 | Membuat timer, poin, dan tampilan setting         | Hanna     | DONE          | 
+| 3.2 | Membuat timer, poin, dan tampilan setting         | Hanna     | DONE          | 
 
 ## Retrospective 
 1. Challenges (Tantangan)

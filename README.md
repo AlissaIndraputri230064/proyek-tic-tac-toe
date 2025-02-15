@@ -13,6 +13,7 @@
     <li><a href="#tujuan-dan-manfaat">Tujuan dan Manfaat</a></li>
     <li><a href="#penjelasan-aplikasi">Penjelasan Program</a></li>
     <li><a href="#change-log">Change Log</a></li>
+    <li><a href="#diagram-alir-program">Diagram Alir Program</a></li>
     <li><a href="#bahasa-yang-digunakan">Bahasa yang Digunakan</a></li>
     <li><a href="#gambar-rancangan-antarmuka">Gambar Rancangan Antarmuka</a></li>
     <li><a href="#lisensi">Lisensi</a></li>
@@ -74,6 +75,19 @@ Tic-Tac-Toe adalah permainan papan yang dimainkan oleh dua orang di papan berpet
    - Mengintegrasi nama user ke database             
    - Logika game 
 
+- **[Sprint 3](changelog/sprint-3.md) - (date from 27 January 2025 until 3 February 2025)** 
+   - Mengintegrasi nama user ke database
+   - Membuat timer, poin, dan tampilan setting
+
+- **[Sprint 4](changelog/sprint-4.md) - (date from 6 February 2025 until 13 February 2025)** 
+   - Membuat save and load state
+   - Mengubah struktur dokumen JSON
+   - Membuat alert jika nama tidak terisi
+
+- **[Sprint 4 Extended](changelog/sprint-4-extended.md) - (date from 14 February 2025 until 16 February 2025)** 
+   - Memperbaiki load state
+   - Menambah animasi di scoring
+
 <!-- Bahasa yang digunakan -->
 ## Bahasa yang digunakan
 
@@ -84,7 +98,7 @@ Bahasa yang digunakan dalam proyek ini:
 <!-- Diagram Alir Program -->
 ## Diagram Alir Program
 
-![Alt text](TicTacToeDevShakyaPeris.drawio.png)
+![Alt text](TicTacToeDevShakyaPeiris.jpg)
 
 Sumber gambar: https://dev.to/shakyapeiris/the-logic-behind-tic-tac-toe-game-32f9 
 
