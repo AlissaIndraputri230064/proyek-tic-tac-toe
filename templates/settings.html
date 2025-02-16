@@ -14,7 +14,7 @@
                 <h1 class="text-6xl text-navy">TIC TAC TOE</h1>
                 <div class="grid grid-rows-3 gap-y-6 text-orange">
                     <a href="{{ url_for('game')}}">
-                        <button class="text-5xl" onclick="updateBoard()">Resume</button>
+                        <button class="text-5xl" id="resume-button">Resume</button>
                     </a>
                     <a href="{{ url_for('game')}}">
                         <button class="text-5xl">Restart</button>
@@ -25,6 +25,6 @@
                 </div>
             </div>
         </div>
-        <script src="{{ url_for('static', filename='js/board.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/board.js') }}" defer></script>
     </body>
 </html>

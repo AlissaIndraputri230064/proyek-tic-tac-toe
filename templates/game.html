@@ -14,7 +14,7 @@
     <body class="bg-yellow font-ShortShack ">
         <div class="flex justify-end">
             <a href="{{ url_for('settings')}}">
-                <button class ="bg-red w-32 h-11 mt-5 mr-5 text-yellow rounded-xl" onclick="boardSave()">Pause</button>
+                <button class ="bg-red w-32 h-11 mt-5 mr-5 text-yellow rounded-xl" id="pause-button">Pause</button>
             </a>
         </div>
 
@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <script src="{{ url_for('static', filename='js/board.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/board.js') }}" defer></script>
 
     </body>
 </html>

@@ -99,38 +99,70 @@ function boardSave(items, size = 3, storageKey = "tempBoard") {
     } catch (error) {
         console.error("Board tidak bisa di-save", error);
     }
-
-    return tempBoard;
 }
 
 // Mengembalikan board yang disimpan sementara
-function boardLoad(storageKey = "tempBoard") {
+function boardLoadAndUpdate(boardItem, storageKey = "tempBoard") {
     const savedBoard = localStorage.getItem(storageKey);
 
-    if (savedBoard) {
-        try {
-            return JSON.parse(savedBoard);
-        } catch (error) {
-            console.error("Board tidak bisa di-load", error);
+    if (!savedBoard) {
+        console.error("Board tidak bisa di-load", error);
+        return null;
+    }
+
+    try {
+        const boardData = JSON.parse(savedBoard);
+
+        if (!Array.isArray(boardData) || boardData.length === 0 || !Array.isArray(boardData[0])) {
+            consoleerror("Board data kosong, update dibatalkan");
             return null;
         }
-    } else {
-        return null;
+
+        if (!boardItem || boardItem.length !== boardData.length * boardData[0].length) {
+            console.error("Data atau item tidak ada");
+            return null;
+        }
+
+        const size = boardData.length;
+        for (let i = 0; i < size; i++) {
+            for (let j = 0; j < size; j++) {
+                boardItem[i * size + j].textContent = boardData[i][j];
+            }
+        }
+
+        console.log("Board berhasil dimuat dan diperbarui", boardData);
+    } catch (error) {
+        console.error("Gagal memuat board", error);
     }
 }
 
-function updateBoard(boardData, boardItem) {
-    if (!boardData || !boardItem || boardItem.length !== boardData.length * boardData[0].length) {
-        console.error("Data atau item invalid");
-        return null;
+document.addEventListener("DOMContentLoaded", () => {
+    const pauseButton = document.getElementById("pause-button");
+
+    if (pauseButton) {
+        pauseButton.addEventListener("click", pauseGame);
     }
 
-    const size = boardData.length;
-    for (let i = 0; i < size; i++) {
-        for (let j = 0; j < size; j++) {
-            boardItem[i * size + j].textContent = boardData[i][j];
-        }
+    boardLoadAndUpdate(items);
+});
+
+function pauseGame() {
+    window.location.href = "settings.html";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const resumeButton = document.getElementById("resume-button");
+
+    if (resumeButton) {
+        resumeButton.addEventListener("click", resumeGame);
     }
+
+    
+
+});
+
+function resumeGame() {
+    window.location.href = "game.html";
 }
 
 //Reset Board
@@ -144,9 +176,14 @@ function resetBoard() {
     resultDisplay.textContent = ' ';  
     resultDisplay.innerHTML = '<br>';
 }
-
+/* 
+document.addEventListener("DOMContentLoaded", () => {
+    resetBoard();
+    localStorage.removeItem("tempBoard");
+});
+*/
 items.forEach(item => {
-    item.addEventListener('click', clickBoard);
+    item.addEventListener("click", clickBoard);
 });
 
 const resultDisplay = document.getElementById('result');
@@ -184,13 +221,7 @@ function clickBoard(event) {
         const result = checkWinner();
         const winner = currentPlayer;
 
-        let savedBoard = boardSave(items);
-
-        let loadedBoard = boardLoad();
-
-        if (loadedBoard) {
-            updateBoard(loadedBoard, items);
-        }
+        boardSave(items);
 
         if (result === 'win') {
             clearInterval(intervalId); 
